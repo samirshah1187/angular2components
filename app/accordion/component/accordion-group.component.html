@@ -1,0 +1,25 @@
+<div class="panel panel-default" [ngClass]="{'panel-open': isOpen}">
+  <div class="panel-heading" (click)="toggleOpen($event)">
+    <!-- <h4 class="panel-title">
+      <span tabindex="0"><span>{{title}}</span></span>
+    </h4>
+    <h4 class="panel-title">
+      <a href tabindex="0"><span>{{subject}}</span></a>
+    </h4> -->
+    <table style="width:100%">
+    <tr style="width:100%">
+      <td style="width:20%">{{title}}</td>
+      <td style="width:20%">{{subject}}</td>
+      <td style="width:20%">{{date}}</td>
+      <td style="width:20%">{{duration}}</td>
+      <td style="width:20%"></td>
+    </tr>
+    </table>
+  </div>
+  <div class="panel-collapse" [hidden]="!isOpen">
+    <div class="panel-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>
+          

@@ -4,7 +4,7 @@ import 'rxjs/Rx';   // Load all features
 import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
 
 import { WelcomeComponent } from './home/welcome.component';
-import { AccordionComponent } from './accordion/accordion.component';
+import { Angular2Accordion } from './accordion/pages/accordion-example.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { EmptyStateComponent } from './emptystate/emptystate.component';
 
@@ -34,7 +34,7 @@ import { EmptyStateComponent } from './emptystate/emptystate.component';
 })
 @RouteConfig([
   { path: '/welcome', name: 'Welcome', component: WelcomeComponent, useAsDefault: true },
-  { path: '/accordion', name: 'Accordion', component: AccordionComponent},
+  { path: '/accordion', name: 'Accordion', component: Angular2Accordion},
   { path: '/pagination', name: 'Pagination', component: PaginationComponent},
   { path: '/emptystate', name: 'EmptyState', component: EmptyStateComponent}
 ])

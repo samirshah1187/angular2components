@@ -11,26 +11,47 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var AccordionComponent;
+    var Accordion;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            AccordionComponent = (function () {
-                function AccordionComponent() {
-                    this.pageTitle = "Accordion";
+            Accordion = (function () {
+                function Accordion() {
+                    this.pageTitle = "Accordion Example";
+                    this.groups = [];
                 }
-                AccordionComponent = __decorate([
+                Accordion.prototype.addGroup = function (group) {
+                    this.groups.push(group);
+                };
+                Accordion.prototype.closeOthers = function (openGroup) {
+                    this.groups.forEach(function (group) {
+                        if (group !== openGroup) {
+                            group.isOpen = false;
+                        }
+                    });
+                };
+                Accordion.prototype.removeGroup = function (group) {
+                    var index = this.groups.indexOf(group);
+                    if (index !== -1) {
+                        this.groups.splice(index, 1);
+                    }
+                };
+                Accordion = __decorate([
                     core_1.Component({
-                        templateUrl: 'app/accordion/accordion.component.html'
+                        selector: 'accordion',
+                        templateUrl: 'app/accordion/component/accordion.component.html',
+                        host: {
+                            'class': 'panel-group'
+                        }
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AccordionComponent);
-                return AccordionComponent;
+                ], Accordion);
+                return Accordion;
             }());
-            exports_1("AccordionComponent", AccordionComponent);
+            exports_1("Accordion", Accordion);
         }
     }
 });

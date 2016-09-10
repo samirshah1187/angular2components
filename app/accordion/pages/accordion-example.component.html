@@ -1,0 +1,16 @@
+<p>
+  <button type="button" class="btn btn-default" (click)="removeAngular2AccordionGroup()">
+    Remove a group from the dynamic content!
+  </button>
+  <button type="button" class="btn btn-default" (click)="addAngular2AccordionGroup()">
+    Add Content!
+  </button>
+</p>
+<accordion>
+  <accordion-group title="Title" subject="Subject" date="Date" duration="Duration" isGroupOpen="false">
+    Introduction
+  </accordion-group>
+  <accordion-group [title]="group.title" [subject]="group.subject" [date]="group.date" [duration]="group.duration" *ngFor="#group of groups">
+    {{group.content}}
+  </accordion-group>
+</accordion>

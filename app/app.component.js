@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router', './home/welcome.component', './accordion/accordion.component', './pagination/pagination.component', './emptystate/emptystate.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router', './home/welcome.component', './accordion/pages/accordion-example.component', './pagination/pagination.component', './emptystate/emptystate.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router',
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, http_1, router_1, welcome_component_1, accordion_component_1, pagination_component_1, emptystate_component_1;
+    var core_1, http_1, router_1, welcome_component_1, accordion_example_component_1, pagination_component_1, emptystate_component_1;
     var AppComponent;
     return {
         setters:[
@@ -27,8 +27,8 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router',
             function (welcome_component_1_1) {
                 welcome_component_1 = welcome_component_1_1;
             },
-            function (accordion_component_1_1) {
-                accordion_component_1 = accordion_component_1_1;
+            function (accordion_example_component_1_1) {
+                accordion_example_component_1 = accordion_example_component_1_1;
             },
             function (pagination_component_1_1) {
                 pagination_component_1 = pagination_component_1_1;
@@ -51,7 +51,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', 'angular2/router',
                     }),
                     router_1.RouteConfig([
                         { path: '/welcome', name: 'Welcome', component: welcome_component_1.WelcomeComponent, useAsDefault: true },
-                        { path: '/accordion', name: 'Accordion', component: accordion_component_1.AccordionComponent },
+                        { path: '/accordion', name: 'Accordion', component: accordion_example_component_1.Angular2Accordion },
                         { path: '/pagination', name: 'Pagination', component: pagination_component_1.PaginationComponent },
                         { path: '/emptystate', name: 'EmptyState', component: emptystate_component_1.EmptyStateComponent }
                     ]), 
