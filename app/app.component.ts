@@ -4,6 +4,9 @@ import 'rxjs/Rx';   // Load all features
 import { ROUTER_PROVIDERS, RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
 
 import { WelcomeComponent } from './home/welcome.component';
+import { AccordionComponent } from './accordion/accordion.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { EmptyStateComponent } from './emptystate/emptystate.component';
 
 @Component({
     selector: 'pm-app',
@@ -30,7 +33,10 @@ import { WelcomeComponent } from './home/welcome.component';
                 ROUTER_PROVIDERS]
 })
 @RouteConfig([
-  { path: '/welcome', name: 'Welcome', component: WelcomeComponent, useAsDefault: true }
+  { path: '/welcome', name: 'Welcome', component: WelcomeComponent, useAsDefault: true },
+  { path: '/accordion', name: 'Accordion', component: AccordionComponent},
+  { path: '/pagination', name: 'Pagination', component: PaginationComponent},
+  { path: '/emptystate', name: 'EmptyState', component: EmptyStateComponent}
 ])
 export class AppComponent {
     pageTitle: string = 'Angular2 Components';
