@@ -34,13 +34,4 @@ export class Angular2Accordion  {
             content: 'Bajrangi Bhaijaan (English translation: Brother Bajrangi) is a 2015 Indian drama film directed by Kabir Khan. Written by K. V. Vijayendra Prasad, the film was produced by Salman Khan and Rockline Venkatesh. It stars Salman Khan and Harshaali Malhotra, with Nawazuddin Siddiqui and Kareena Kapoor Khan in supporting roles. Khan stars as Bajrangi, an ardent devotee of Hindu deity Hanuman, who embarks on taking a mute six-year-old Pakistani girl (Malhotra), separated in India from her parents, back to her hometown in Pakistan.'
         }
     ];
-
-    removeAngular2AccordionGroup() {
-        this.groups.splice(1,1);
-    }
-
-    addAngular2AccordionGroup() {
-        let accordionGroupContent = {heading:'Hi New Content !', content:'Content angular 2 accordion '};
-        this.groups.splice(1,0,accordionGroupContent);
-    }
 }

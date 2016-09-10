@@ -1,5 +1,5 @@
 <div class="panel panel-default" [ngClass]="{'panel-open': isOpen}">
-  <div class="panel-heading" (click)="toggleOpen($event)">
+  <div class="panel-heading">
     <!-- <h4 class="panel-title">
       <span tabindex="0"><span>{{title}}</span></span>
     </h4>
@@ -12,7 +12,9 @@
       <td style="width:20%">{{subject}}</td>
       <td style="width:20%">{{date}}</td>
       <td style="width:20%">{{duration}}</td>
-      <td style="width:20%"></td>
+      <td style="width:20%">
+        <button (click)="toggleOpen($event)">Select</button>
+      </td>
     </tr>
     </table>
   </div>

@@ -51,13 +51,6 @@ System.register(['angular2/core', '../component/accordion.component', '../compon
                         }
                     ];
                 }
-                Angular2Accordion.prototype.removeAngular2AccordionGroup = function () {
-                    this.groups.splice(1, 1);
-                };
-                Angular2Accordion.prototype.addAngular2AccordionGroup = function () {
-                    var accordionGroupContent = { heading: 'Hi New Content !', content: 'Content angular 2 accordion ' };
-                    this.groups.splice(1, 0, accordionGroupContent);
-                };
                 Angular2Accordion = __decorate([
                     core_1.Component({
                         selector: 'my-app',
