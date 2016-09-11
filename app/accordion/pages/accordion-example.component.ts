@@ -6,7 +6,12 @@ import {AccordionGroup} from '../component/accordion-group.component';
 @Component({
     selector: 'my-app',
     templateUrl:'app/accordion/pages/accordion-example.component.html',
-    directives: [Accordion, AccordionGroup]
+    directives: [Accordion, AccordionGroup],
+    styles: [`
+        .card{
+            color:green;
+        }
+    `],
 })
 export class Angular2Accordion  {
     isGroupOpen = false;

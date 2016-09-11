@@ -71,7 +71,8 @@ System.register(['angular2/core', './accordion.component'], function(exports_1, 
                 AccordionGroup = __decorate([
                     core_1.Component({
                         selector: 'accordion-group',
-                        templateUrl: 'app/accordion/component/accordion-group.component.html'
+                        templateUrl: 'app/accordion/component/accordion-group.component.html',
+                        styles: ["\n    .active{\n     transform: rotate(90deg);\n    }\n  "],
                     }), 
                     __metadata('design:paramtypes', [accordion_component_1.Accordion])
                 ], AccordionGroup);

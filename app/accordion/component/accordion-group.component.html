@@ -8,11 +8,14 @@
     </h4> -->
     <table style="width:100%">
     <tr style="width:100%">
-      <td style="width:20%">{{title}}</td>
-      <td style="width:20%">{{subject}}</td>
-      <td style="width:20%">{{date}}</td>
-      <td style="width:20%">{{duration}}</td>
-      <td style="width:20%">
+      <td style="width:10%">
+        <span [ngClass]="{'active': isOpen}" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+      </td>
+      <td style="width:18%">{{title}}</td>
+      <td style="width:23%">{{subject}}</td>
+      <td style="width:13%">{{date}}</td>
+      <td style="width:18%">{{duration}}</td>
+      <td style="width:18%; text-align: center;">
         <button (click)="toggleOpen($event)">Select</button>
       </td>
     </tr>

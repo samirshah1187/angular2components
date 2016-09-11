@@ -4,7 +4,12 @@ import {Accordion} from './accordion.component';
 
 @Component({
   selector: 'accordion-group',
-  templateUrl:'app/accordion/component/accordion-group.component.html'
+  templateUrl:'app/accordion/component/accordion-group.component.html',
+  styles : [`
+    .active{
+     transform: rotate(90deg);
+    }
+  `],
 })
 export class AccordionGroup implements OnDestroy {
   private _isOpen:boolean = false;

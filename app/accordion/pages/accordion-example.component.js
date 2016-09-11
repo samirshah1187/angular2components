@@ -55,7 +55,8 @@ System.register(['angular2/core', '../component/accordion.component', '../compon
                     core_1.Component({
                         selector: 'my-app',
                         templateUrl: 'app/accordion/pages/accordion-example.component.html',
-                        directives: [accordion_component_1.Accordion, accordion_group_component_1.AccordionGroup]
+                        directives: [accordion_component_1.Accordion, accordion_group_component_1.AccordionGroup],
+                        styles: ["\n        .card{\n            color:green;\n        }\n    "],
                     }), 
                     __metadata('design:paramtypes', [])
                 ], Angular2Accordion);
